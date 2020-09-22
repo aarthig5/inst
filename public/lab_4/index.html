@@ -9,7 +9,13 @@
     </head>
 
     <body>
-        <form>
+      <div class="header">
+        <h1>Aarthi Ganesh's Lab 3</h1>
+      </div>
+      
+      <div class="main">
+        <div class="wrapper">
+          <form method="post" action="/api">
             <ul class="flex-outer">
               <li>
                 <label for="first-name">First Name</label>
@@ -29,24 +35,23 @@
               </li>
               <li>
                 <label for="message">Message</label>
-                <textarea rows="6" id="message" placeholder="Enter your message here"></textarea>
+                <textarea rows="5" cols="33" id="message" placeholder="Enter your message here"></textarea>
               </li>
               <li>
                 <p>Age</p>
                 <ul class="flex-inner">
                     <li>
-                        <input type="checkbox" id="eighteen-to-thirtyfive">
-                        <label for="twenty-to-twentynine">18-35</label>
+                        <input type="checkbox" id="eighteen-to-thirtyfive" name="18-35">
+                        <label for="eighteen-to-thirtyfive">18-35</label>
                     </li>
                     <li>
-                        <input type="checkbox" id="thirtyfive-to-fifty">
-                        <label for="thirty-to-thirtynine">35-50</label>
+                        <input type="checkbox" id="thirtyfive-to-fifty" name="35-50">
+                        <label for="thirtyfive-to-fifty">35-50</label>
                     </li>
                     <li>
-                        <input type="checkbox" id="fifty-to-sixtyfive">
-                        <label for="thirty-to-thirtynine">50-65</label>
+                        <input type="checkbox" id="fifty-to-sixtyfive" name="50-65">
+                        <label for="fifty-to-sixtyfive">50-65</label>
                     </li>
-                    <!-- more list items here -->
                 </ul>                   
               </li>
               <li>
@@ -54,5 +59,7 @@
               </li>
             </ul>
           </form>
+          </div>
+        </div>
     </body>
 </html>
