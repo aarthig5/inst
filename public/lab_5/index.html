@@ -10,7 +10,7 @@
 
     <body>
       <div class="header">
-        <h1>Aarthi Ganesh Lab 4</h1>
+        <h1 id="test">Aarthi Ganesh Lab 4</h1>
       </div>
       
       <div class="main">
@@ -38,7 +38,7 @@
                 <textarea rows="5" cols="33" id="message" name="message" placeholder="This is some default message text."></textarea>
               </li>
               <li>
-                <p id="label_age">Age</p>
+                <p class="checkbox_label">Age</p>
                 <ul class="flex-inner">
                     <li>
                         <input type="checkbox" id="eighteen-to-thirtyfive" name="18-35">
@@ -68,11 +68,14 @@
           .then((response) => response.text())
           .then((response) => {
             console.log(response);
-            const myHeading = document.querySelector('h1');
-            myHeading.textContent = 'Lab 5 for Aarthi Ganesh';
+            const myHeading = document.querySelector("#test");
             console.log(myHeading);
+            myHeading.textContent = response;
+            document.body.style.backgroundColor= "rgb(188, 143, 143)";
           })
         }
+
+
       </script>
     </body>
 </html>
