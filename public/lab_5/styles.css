@@ -175,6 +175,11 @@ nav a, nav span {
   margin-right: 10px;
 }
 
+.flex-outer {
+  max-width: 800px;
+  padding: 0px 16px;
+}
+
 .flex-inner li {
   width: 95px;
   margin-right: 10px;
