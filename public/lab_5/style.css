@@ -1,3 +1,4 @@
+
 /* || General setup */
 
 html, body {
@@ -180,5 +181,11 @@ html, body {
 
 
   .wrapper {
+<<<<<<< HEAD:public/lab_4/style.css
     justify-content: space-around;
   }
+=======
+    justify-content: center;
+  }
+
+>>>>>>> 7e17083b75d612688a6990c8e65684254d45e25a:public/lab_5/style.css
