@@ -38,7 +38,7 @@
                 <textarea rows="5" cols="33" id="message" name="message" placeholder="This is some default message text."></textarea>
               </li>
               <li>
-                <p class="checkbox-list-label">Age</p>
+                <p id="checkbox-list-label" onclick="changeid()">Age</p>
                 <ul class="flex-inner">
                     <li>
                         <input type="checkbox" id="eighteen-to-thirtyfive" name="18-35">
@@ -74,8 +74,10 @@
             document.body.style.backgroundColor= "rgb(188, 143, 143)";
           })
         }
-
-
+        function changeid() { 
+          var e = document.getElementById("checkbox-list-label");
+          e.id = "Fruits";
+        }
       </script>
     </body>
 </html>
