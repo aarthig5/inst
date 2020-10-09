@@ -71,7 +71,13 @@
             const myHeading = document.querySelector("#test");
             console.log(myHeading);
             myHeading.textContent = response;
+
             document.body.style.backgroundColor= "rgb(188, 143, 143)";
+
+            // document.querySelector('.flex-outer').style.margin = '0 auto';
+            const ele = document.querySelector('.flex-outer');
+            ele.style.margin = "0 auto";
+
             const e = document.querySelector(".checkbox-list-label");
             e.innerText = "Fruits";
             
@@ -83,7 +89,6 @@
               el.innerText = fruitArray[i];
             })
 
-            const ele = document.querySelector('.flex-outer')="margin: 0 auto;" 
           })
         }
       </script>
