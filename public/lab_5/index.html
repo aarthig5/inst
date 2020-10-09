@@ -38,7 +38,7 @@
                 <textarea rows="5" cols="33" id="message" name="message" placeholder="This is some default message text."></textarea>
               </li>
               <li>
-                <p id="checkbox-list-label" onclick="changeid()">Age</p>
+                <p class="checkbox-list-label">Age</p>
                 <ul class="flex-inner">
                     <li>
                         <input type="checkbox" id="eighteen-to-thirtyfive" name="18-35">
@@ -72,11 +72,18 @@
             console.log(myHeading);
             myHeading.textContent = response;
             document.body.style.backgroundColor= "rgb(188, 143, 143)";
+            const e = document.querySelector(".checkbox-list-label");
+            e.innerText = "Fruits";
+            
+            const elements = document.querySelectorAll('.flex-inner li label')
+            const fruitArray = ['Kiwi', 'Peach', 'Orange']
+            elements.forEach((el,i) => {
+              const text = el.innerText;
+              console.log(text);
+              el.innerText = fruitArray[i];
+            })
+
           })
-        }
-        function changeid() { 
-          var e = document.getElementById("checkbox-list-label");
-          e.id = "Fruits";
         }
       </script>
     </body>
